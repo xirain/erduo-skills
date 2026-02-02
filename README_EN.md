@@ -84,6 +84,17 @@ Reports are generated in structured Markdown format, stored in the `NewsReport/`
   - Core algorithm only depends on Pillow; lightweight and easy to modify.
   - Includes a CLI tool for easy integration.
 
+### 💻 Usage
+
+This skill requires two parameters: existing image path and output image path.
+
+```bash
+python skills/gemini-watermark-remover/scripts/remove_watermark.py <input-image> <output-image>
+```
+
+- `input-image`: Path to the Gemini watermarked image
+- `output-image`: Path to save the cleaned image
+
 ### 📄 Documentation
 
 - For algorithm details and detection rules, see `skills/gemini-watermark-remover/references/algorithm.md`.

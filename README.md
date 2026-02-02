@@ -84,6 +84,17 @@ graph TD
   - 核心算法仅依赖 Pillow，轻量且易于修改。
   - 提供 CLI 命令行工具，方便集成到工作流中。
 
+### 💻 使用方法
+
+该技能需要两个参数：输入图片路径和输出图片路径。
+
+```bash
+python skills/gemini-watermark-remover/scripts/remove_watermark.py <input-image> <output-image>
+```
+
+- `input-image`: 包含 Gemini 水印的原始图片路径
+- `output-image`: 去除水印后的图片保存路径
+
 ### 📄 效果
 
 - 如果你需要调整检测规则，可以参考 `skills/gemini-watermark-remover/references/algorithm.md`。
